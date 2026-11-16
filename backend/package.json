@@ -1,0 +1,60 @@
+{
+  "name": "lowtec_backend",
+  "version": "1.0.0",
+  "description": "API backend desenvolvida pela TecZed para gerenciamento de dados, regras de negócio, autenticação e integrações da plataforma.",
+  "keywords": [
+    "backend",
+    "api",
+    "node",
+    "typescript",
+    "express",
+    "teczed"
+  ],
+  "homepage": "https://github.com/TecZed-Solutions/lowtec#readme",
+  "bugs": {
+    "url": "https://github.com/TecZed-Solutions/lowtec/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TecZed-Solutions/lowtec.git"
+  },
+  "license": "MIT",
+  "author": "TecZed",
+  "type": "module",
+  "main": "src/server.ts",
+  "scripts": {
+    "test": "tsx watch src/server.ts",
+    "postinstall": "npx prisma generate"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.1145.0",
+    "@prisma/adapter-pg": "^7.10.0",
+    "@prisma/client": "^7.10.0",
+    "axios": "^1.20.0",
+    "bcrypt": "^6.0.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.4",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.7.0",
+    "google-auth-library": "^11.1.0",
+    "jsonwebtoken": "^9.0.3",
+    "multer": "^2.4.0",
+    "resend": "^6.31.0",
+    "sharp": "^0.35.5"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^6.0.0",
+    "@types/cookie-parser": "^1.4.10",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/morgan": "^1.9.10",
+    "@types/multer": "^2.3.0",
+    "@types/node": "^26.6.3",
+    "morgan": "^1.12.1",
+    "prisma": "^7.10.0",
+    "tsx": "^4.23.15",
+    "typescript": "^6.0.3"
+  }
+}
